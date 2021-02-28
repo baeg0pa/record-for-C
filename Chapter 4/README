@@ -8,3 +8,9 @@ short < int < long
 totaller_fix.h라는 헤더파일을 생성.  {헤더파일 안에는 "함수 선언"(!= "함수정의")이 되어있음.}
 꺽쇠괄호 == 헤더파일이 라이브러리 코드가 있는 디렉터리에 있을 때
 끈따옴표 == 헤더파일이 소스코드와 같은 디렉터리에 있을 때
+
+
+**message_hider.c**
+encrypt.h파일 안에 encrypt()함수 선언.
+encrypt.c파일 안에 encrypt()함수 정의.
+message_hider.c파일에 encrypt.h파일 사용. (#include "encrypt.h")
