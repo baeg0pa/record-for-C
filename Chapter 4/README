@@ -1,0 +1,4 @@
+**totaller.c**
+정수형을 실수형으로 변환하는 방법
+short형에 대한 형식지정자 == %hi
+short < int < long
