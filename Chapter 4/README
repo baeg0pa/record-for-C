@@ -14,3 +14,9 @@ totaller_fix.h라는 헤더파일을 생성.  {헤더파일 안에는 "함수 �
 encrypt.h파일 안에 encrypt()함수 선언.
 encrypt.c파일 안에 encrypt()함수 정의.
 message_hider.c파일에 encrypt.h파일 사용. (#include "encrypt.h")
+
+encrypt.c파일과 message_hider.c 파일을 함께 컴파일 (gcc message_hider.c encrypt.c -o message_hider)
+(messgae_hider.c파일에서 encrypt()함수에 대한 정보를 encrypt.c파일과 encrypt.h파일을 통해 얻어오는 듯...)
+
+
+
