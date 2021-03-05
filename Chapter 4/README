@@ -36,3 +36,6 @@ launch: launch.o thruster.o
   
 ==> launch라는 이름을 가진 실행파일이 만들어짐.  
 
+
+
+
