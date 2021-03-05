@@ -19,4 +19,20 @@ encrypt.c파일과 message_hider.c 파일을 함께 컴파일 (gcc message_hider
 (messgae_hider.c파일에서 encrypt()함수에 대한 정보를 encrypt.c파일과 encrypt.h파일을 통해 얻어오는 듯...)
 
 
+**make도구로 빌드 자동화하기** p 240부터 보셈
+launch.c launch.h thruster.c thruster.h 파일 생성
+makefile(아니면 Makefile) 파일 생성.
+
+makefile파일 안에 의존파일과 생성방법, 타겟 적기
+<makefile내용>
+launch.o: launch.c launch.h thruster.h  (타겟, 의존파일)
+  gcc -c launch.c         //이 부분은 반드신 tab키로 띄어써야함.(생성방법)
+
+thruster.o: thruster.h thruster.c
+  gcc -c thruster.c
+  
+launch: launch.o thruster.o
+  gcc launch.o thruster.o -o launch
+  
+==> launch라는 이름을 가진 실행파일이 만들어짐.  
 
